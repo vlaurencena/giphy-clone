@@ -1,0 +1,21 @@
+.SearchBarDropdownChannels__title {
+  min-width: 100%;
+  background-color: gray;
+}
+
+.SearchBarDropdownChannels img {
+  width: 40px;
+  height: 40px;
+}
+
+.SearchBarDropdownChannels__item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.SearchBarDropdownChannels__item {
+  color: #000000;
+  text-decoration: none;
+}

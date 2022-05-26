@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import fetchGifsByQuery from "../services/fetchGifsByQuery";
+import searchEndpoint from "../services/searchEndpoint";
 
 const useGifs = ({ query }) => {
 
@@ -8,7 +8,7 @@ const useGifs = ({ query }) => {
 
     useEffect(() => {
         setLoading(true)
-        fetchGifsByQuery(query).then(searchResult => {
+        searchEndpoint(query).then(searchResult => {
             setGifs(searchResult)
             setLoading(false)
         })

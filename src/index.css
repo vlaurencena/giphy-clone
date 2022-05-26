@@ -1,51 +1,32 @@
-/* CSS RESET */
-/*https://www.joshwcomeau.com/css/custom-css-reset/*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-* {
-  margin: 0;
-}
-html,
-body,
-#root {
-  height: 100%;
-}
 body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+    background-color: rgb(18, 18, 18);
+    color: rgb(255, 255, 255);
+    font-family: interface, "Helvetica Neue", helvetica, sans-serif;
+    /* font-size: 16px;
+    font-weight: normal;
+    height: 100%;
+    letter-spacing: 0px;
+    margin: 0px auto;
+    min-height: 500px;
+    overflow-y: scroll;
+    text-align: left;
+    width: 1040px;
+    min-width: 1040px;
+    padding: 0px;
+    border: 0px;
+    vertical-align: baseline;
+    line-height: unset;
+    list-style: none; */
 }
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
+
+.visibility-hidden {
+    visibility: hidden;
 }
-input,
-button,
-textarea,
-select {
-  font: inherit;
+
+.width-1040 {
+    width: 1040px;
+    margin: 0 auto;
 }
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-#root,
-#__next {
-  isolation: isolate;
-}
-/*My reset*/
-button {
-  border: 0;
-  background-color: transparent;
-}
+
+
+
