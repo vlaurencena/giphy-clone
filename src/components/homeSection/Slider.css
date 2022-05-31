@@ -1,25 +1,22 @@
 .Slider {
-  height: 140px;
-  overflow: hidden;
   position: relative;
   width: 1040px;
 }
 
 .Slider__content {
   margin: 0px;
-  overflow-x: scroll;
   padding: 0px 6px 0px 0px;
-  position: absolute;
   right: 0;
   text-align: left;
   white-space: nowrap;
+  overflow: hidden;
 }
 
-.Slider__content img {
-  max-height: 140px;
+.Slider__content>div {
+margin-right: 4px;
 }
 
-.Slider button {
+.Slider>button {
   color: rgb(166, 166, 166);
   cursor: pointer;
   min-height: 100%;
@@ -28,7 +25,7 @@
   z-index: 2;
 }
 
-.Slider button:hover {
+.Slider>button:hover {
   color: #ffffff;
 }
 

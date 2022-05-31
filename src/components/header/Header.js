@@ -1,11 +1,10 @@
-import React from "react";
-import { Link } from "wouter";
+import React from "react"
+import { Link } from "wouter"
 //components
-import NavBar from "./NavBar";
+import NavBar from "./NavBar"
+import Profile from "./Profile"
 //css
-import "./Header.css";
-//icons
-import { KeyboardArrowDown } from "@mui/icons-material";
+import "./Header.css"
 
 const Header = () => {
 
@@ -17,11 +16,7 @@ const Header = () => {
                 <button>Upload</button>
                 <button>Create</button>
             </div>
-            <div className="Header__profile">
-                <img src="/media/user-avatar.jpeg" alt="User's avatar" />
-                <button>Victor</button>
-                <KeyboardArrowDown />
-            </div>
+            <Profile />
         </header>
     )
 }

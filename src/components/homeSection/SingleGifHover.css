@@ -1,0 +1,32 @@
+.SingleGifHover__buttons {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  top: 10px;
+  right: 10px;
+}
+
+.SingleGifHover__buttons > button {
+  padding: 0;
+  cursor: pointer;
+  filter: invert(95%) sepia(95%) saturate(0%) hue-rotate(107deg)
+    brightness(104%) contrast(106%);
+}
+
+.SingleGifHover__buttons>button > svg {
+  width: 30px;
+  height: 20px;
+}
+
+.SingleGifHover__buttons>button > svg:hover {
+transform: scale(1.2);
+  }
+
+.SingleGifHover__channel-avatar {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+  left: 10px;
+}

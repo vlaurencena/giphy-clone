@@ -23,6 +23,7 @@ const HomeSection = ({ content, icon, link_text, link_url, title }) => {
             <div>
                 {content && <Slider
                     content={content}
+                    type={title}
                 />}
             </div>
         </section>

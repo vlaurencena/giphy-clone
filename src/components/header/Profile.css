@@ -1,0 +1,27 @@
+.Profile {
+  position: relative;
+  margin: 10px 0px 0px;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background: rgb(62, 62, 62);
+  font-weight: bold;
+  position: relative;
+  width: 176px;
+  display: flex;
+}
+
+.Profile img {
+  width: 36px;
+}
+
+.Profile__username {
+  width: 100px;
+  flex: 1;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.Profile svg {
+  height: 36px;
+  width: 40px;
+}

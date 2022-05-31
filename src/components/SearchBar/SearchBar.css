@@ -45,6 +45,8 @@
 .SearchBar__Placeholder__options p {
   align-items: center;
   display: flex;
+  font-size: 18px;
+  font-weight: 400;
   height: 100%;
 }
 
@@ -75,9 +77,9 @@
   color: #ffffff;
   cursor: pointer;
   display: flex;
-  height: 52px;
+  min-height: 52px;
   justify-content: center;
-  width: 52px;
+  min-width: 52px;
 }
 
 @keyframes gVMIwq {

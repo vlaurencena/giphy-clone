@@ -4,7 +4,8 @@
   justify-content: space-between;
   height: 50px;
   align-items: center;
-  margin: 10px 0px 0px 14px;
+  /* margin: 10px 0px 0px 14px; */
+  margin-top: 10px;
   max-width: 496px;
 }
 

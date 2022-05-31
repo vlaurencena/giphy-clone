@@ -12,19 +12,22 @@
   margin-bottom: 8px;
 }
 
-.HomeSection a {
+.HomeSection__heading > a {
   align-items: center;
   color: #ffffff;
   display: flex;
-  gap: 10px;
   text-decoration: none;
 }
 
-.HomeSection > a h3 {
+.HomeSection__heading > a > h3 {
   font-size: 1.5rem;
 }
 
-.HomeSection a h5,
-.HomeSection a svg {
+.HomeSection__heading > a > h5 {
+  font-size: 1rem;
+}
+
+.HomeSection__heading > a > h5,
+.HomeSection__heading > a > svg {
   color: rgb(166, 166, 166);
 }

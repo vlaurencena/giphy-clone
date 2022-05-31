@@ -1,0 +1,43 @@
+.ProfileDropdown {
+  position: absolute;
+  top: 36px;
+  min-width: 176px;
+  background-color: aqua;
+  z-index: 3;
+}
+
+.ProfileDropdown ul {
+  background-color: rgb(62, 62, 62);
+  z-index: 2;
+}
+
+.ProfileDropdown ul li:first-of-type {
+  border-top: 4px solid rgb(18, 18, 18);
+}
+
+.ProfileDropdown ul li {
+  cursor: pointer;
+  text-align: center;
+  list-style: none;
+  border-top: 1px solid rgb(81, 81, 81);
+}
+
+.ProfileDropdown ul li:hover {
+    background: rgb(166, 166, 166);
+}
+
+.ProfileDropdown ul li button {
+  cursor: pointer;
+}
+
+.ProfileDropdown ul li a,
+.ProfileDropdown ul li button {
+  color: #ffffff;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  /* float: none; */
+  /* margin: 0px; */
+  padding: 10px 15px;
+  font-size: 15px;
+}

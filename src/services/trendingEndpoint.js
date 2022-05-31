@@ -4,7 +4,7 @@ const trendingEndpoint = ({ limit }) => {
         .then(res => res.json())
         .then(response => {
             const { data } = response;
-            console.log(data);
+            // console.log(data);
             const gifs = data.map(singleGif => {
                 // console.log(singleGif);
                 const { id, slug, title } = singleGif;
