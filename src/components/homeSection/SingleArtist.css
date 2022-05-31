@@ -31,7 +31,7 @@
   margin-bottom: auto;
 }
 
-.SingleArtist__info>div {
+.SingleArtist__info > div {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -55,4 +55,40 @@
 .SingleArtist__display_slug > svg {
   height: 14px;
   color: rgb(21, 205, 255);
+}
+
+.SingleArtist__cutout-container {
+  position: absolute;
+  right: -48px;
+  top: -48px;
+  min-width: 48px;
+  min-height: 48px;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.SingleArtist:hover .SingleArtist__image {
+  opacity: 0.5;
+}
+
+.SingleArtist:hover .SingleArtist__cutout-container {
+  visibility: visible;
+  right: 0;
+  top: 0;
+}
+
+.SingleArtist__cutout-container > .pattern {
+  min-width: 48px;
+  min-height: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.bg-color-black {
+  background-color: #000000;
+}
+
+.bg-color-salmon {
+  background-color: rgb(255 102 102);
 }

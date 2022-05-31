@@ -8,7 +8,6 @@ import VerifiedIcon from '@mui/icons-material/Verified';
 
 const SingleArtist = ({ id, isVerified, right, slug, title, url, avatar_url, display_name }) => {
     const [hovered, setHovered] = useState(true)//false
-    console.log(isVerified);
     const handleMouseEnter = () => {
         setHovered(true)
     }
@@ -47,6 +46,20 @@ const SingleArtist = ({ id, isVerified, right, slug, title, url, avatar_url, dis
                     </div>
                 </Link>
             </div>
+            <div className="SingleArtist__cutout-container">
+                <div className="pattern">
+                    <div className="bg-color-salmon"></div>
+                    <div className="bg-color-black"></div>
+                    <div className="bg-color-black"></div>
+                    <div className="bg-color-salmon"></div>
+                    <div className="bg-color-salmon"></div>
+                    <div className="bg-color-black"></div>
+                    <div className="bg-color-salmon"></div>
+                    <div className="bg-color-salmon"></div>
+                    <div className="bg-color-salmon"></div>
+                </div>
+            </div>
+
         </div>
     )
 }
