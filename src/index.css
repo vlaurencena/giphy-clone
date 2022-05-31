@@ -1,32 +1,35 @@
 body {
-    background-color: rgb(18, 18, 18);
-    color: rgb(255, 255, 255);
-    font-family: interface, "Helvetica Neue", helvetica, sans-serif;
-    /* font-size: 16px;
-    font-weight: normal;
-    height: 100%;
-    letter-spacing: 0px;
-    margin: 0px auto;
-    min-height: 500px;
-    overflow-y: scroll;
-    text-align: left;
-    width: 1040px;
-    min-width: 1040px;
-    padding: 0px;
-    border: 0px;
-    vertical-align: baseline;
-    line-height: unset;
-    list-style: none; */
+  background-color: #121212;
+  color: #ffffff;
+  font-family: InterFace, sans-serif;
+  margin: 0
 }
 
 .visibility-hidden {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .width-1040 {
-    width: 1040px;
-    margin: 0 auto;
+  width: 1040px;
+  margin: 0 auto;
 }
+/* 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+} */
+
+body h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+}
+
+body p {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 
 
 

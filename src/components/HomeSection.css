@@ -1,0 +1,30 @@
+.HomeSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.HomeSection__heading {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.HomeSection a {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.HomeSection > a h3 {
+  font-size: 1.5rem;
+}
+
+.HomeSection a h5,
+.HomeSection a svg {
+  color: rgb(166, 166, 166);
+}

@@ -1,8 +1,6 @@
 .SearchBar {
   width: 1040px;
-  height: 50px;
-  border: 1x solid black;
-
+  height: 52px;
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 18px;
@@ -36,30 +34,30 @@
 }
 
 .SearchBar__Placeholder__options {
-  z-index: 0;
-  height: 400%;
-  margin-left: 10px;
+  align-content: stretch;
   display: flex;
   flex-direction: column;
-  align-content: stretch;
+  height: 400%;
+  margin-left: 10px;
+  z-index: 0;
 }
 
 .SearchBar__Placeholder__options p {
-  height: 100%;
-  display: flex;
   align-items: center;
+  display: flex;
+  height: 100%;
 }
 
 .SearchBar input {
-  width: 100%;
-  z-index: 2;
   background-color: transparent;
   border: 0;
   padding: 10px;
+  width: 100%;
+  z-index: 2;
 }
 
 .SearchBar input:focus {
-  outline: 0;
+  outline: none;
 }
 
 .SearchBar__Placeholder__options {
@@ -68,14 +66,20 @@
 }
 
 .SearchBar button {
-  width: 52px;
-  height: 52px;
-  background-color: blueviolet;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background: linear-gradient(
+    45deg,
+    rgb(153, 51, 255) 0%,
+    rgb(255, 102, 102) 100%
+  );
+  color: #ffffff;
   cursor: pointer;
+  display: flex;
+  height: 52px;
+  justify-content: center;
+  width: 52px;
 }
+
 @keyframes gVMIwq {
   0% {
     transform: translateY(0px);

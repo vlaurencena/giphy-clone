@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react"
 import { Link } from "wouter"
 //css
-import './SearchBarDropdownChannels.css'
+import "./SearchBarDropdownChannels.css"
 
 const SearchBarDropdownChannels = ({ channels }) => {
     return (

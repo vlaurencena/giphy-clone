@@ -1,7 +1,5 @@
-const API_KEY = "h0NKZsVaHPxtxCaQlw4qCAPueRdJB0wB";
-
 const searchEndpoint = (query) => {
-    const apiURL = `https://api.giphy.com/v1/gifs/search?q=${query}&limit=25&offset=0&lang=en&api_key=${API_KEY}`;
+    const apiURL = `https://api.giphy.com/v1/gifs/search?q=${query}&limit=25&offset=0&lang=en&api_key=${process.env.REACT_APP_GIPHY_API_KEY}`;
     return fetch(apiURL)
         .then(res => res.json())
         .then(response => {

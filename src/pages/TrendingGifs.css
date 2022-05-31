@@ -1,0 +1,15 @@
+.TrendingGifs .ListOfGifs {
+  column-count: 4;
+  -moz-column-gap: 10px;
+  -webkit-column-gap: 10px;
+  column-gap: 10px;
+}
+.TrendingGifs h1 {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 16px 0px;
+}
+
+.TrendingGifs .SingleGif {
+  margin-bottom: 10px;
+}

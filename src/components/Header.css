@@ -1,4 +1,44 @@
 .Header {
+  align-items: center;
   display: flex;
+  padding-top: 10px;
+}
+
+.cliphy-logo {
+  width: 165px;
+  filter: brightness(0) invert(1);
+}
+
+.Header__buttons {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.Header__buttons button {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #6d63ff;
+  width: 75px;
+  height: 35px;
+  margin-right: 3px;
+}
+
+.Header__profile {
+  align-items: center;
+  background-color: #4a494a;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.Header__profile img {
+  width: 35px;
+}
+
+.Header__profile button {
   color: #ffffff;
 }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { useLocation } from "wouter"
 
 //css 
-import './SearchBar.css'
+import "./SearchBar.css"
 //components
 import SearchBarDropdown from "./SearchBarDropdown"
 

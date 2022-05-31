@@ -1,0 +1,50 @@
+.Slider {
+  height: 140px;
+  overflow: hidden;
+  position: relative;
+  width: 1040px;
+}
+
+.Slider__content {
+  margin: 0px;
+  overflow-x: scroll;
+  padding: 0px 6px 0px 0px;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.Slider__content img {
+  max-height: 140px;
+}
+
+.Slider button {
+  color: rgb(166, 166, 166);
+  cursor: pointer;
+  min-height: 100%;
+  position: absolute;
+  width: 50px;
+  z-index: 2;
+}
+
+.Slider button:hover {
+  color: #ffffff;
+}
+
+.Slider__more {
+  background: linear-gradient(
+    -90deg,
+    rgba(18, 18, 18, 0.75) 0%,
+    rgba(18, 18, 18, 0) 100%
+  );
+  right: 0;
+}
+.Slider__less {
+  background: linear-gradient(
+    90deg,
+    rgba(18, 18, 18, 0.75) 0%,
+    rgba(18, 18, 18, 0) 100%
+  );
+  left: 0;
+}

@@ -1,5 +1,5 @@
-import React from 'react'
-import LisfOfGifs from "../components/LisfOfGifs"
+import React from "react"
+import ListOfGifs from "../components/ListOfGifs"
 import useGifs from "../hooks/useGifs"
 
 const Search = ({ params }) => {
@@ -10,7 +10,7 @@ const Search = ({ params }) => {
         <>
             {loading
                 ? <div>Loading</div>
-                : <LisfOfGifs
+                : <ListOfGifs
                     gifs={gifs}
                 />
             }
