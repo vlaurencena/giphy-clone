@@ -3,8 +3,7 @@ import { Link } from "wouter"
 //css
 import "./SingleArtist.css"
 //components
-//icons
-import VerifiedIcon from '@mui/icons-material/Verified';
+import SingleArtistInfo from "./SingleArtistInfo";
 
 const SingleArtist = ({ id, isVerified, right, slug, title, url, avatar_url, display_name }) => {
     const [hovered, setHovered] = useState(true)//false
@@ -34,18 +33,13 @@ const SingleArtist = ({ id, isVerified, right, slug, title, url, avatar_url, dis
                     src={url}
                 />
             </Link>
-            <div className="SingleArtist__info">
-                <Link to={`/${slug}`}>
-                    <img
-                        alt={title}
-                        src={avatar_url}
-                    />
-                    <div>
-                        <div className="SingleArtist__display_name">{display_name}</div>
-                        <div className="SingleArtist__display_slug"><span>@{slug}</span>{isVerified && <VerifiedIcon />}</div>
-                    </div>
-                </Link>
-            </div>
+            <SingleArtistInfo
+                slug={slug}
+                alt={title}
+                avatar_url={avatar_url}
+                display_name={display_name}
+                isVerified={isVerified}
+            />
             <div className="SingleArtist__cutout-container">
                 <div className="pattern">
                     <div className="bg-color-salmon"></div>

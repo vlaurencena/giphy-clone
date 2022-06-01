@@ -3,6 +3,7 @@ const trendingEndpoint = ({ limit }) => {
     return fetch(apiURL)
         .then(res => res.json())
         .then(response => {
+            console.log(response);
             const { data } = response;
             // console.log(data);
             const gifs = data.map(singleGif => {

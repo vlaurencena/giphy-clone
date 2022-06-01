@@ -1,0 +1,46 @@
+.SingleArtist__info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    gap: 10px;
+    height: 36px;
+  }
+  
+  .SingleArtist__info img {
+    height: 36px;
+    width: 36px;
+  }
+  
+  .SingleArtist__info > a {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    margin-bottom: auto;
+  }
+  
+  .SingleArtist__info > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .SingleArtist__display_name {
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+  }
+  
+  .SingleArtist__display_slug {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+  }
+  
+  .SingleArtist__display_slug > svg {
+    height: 14px;
+    color: rgb(21, 205, 255);
+  }
+  

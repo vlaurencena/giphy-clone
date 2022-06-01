@@ -12,7 +12,6 @@ const Slider = ({ content, limit, type }) => {
 
   const [count, setCount] = useState(0)
   const [right, setRight] = useState(0)
-
   useEffect(() => {
     setRight(90 * count)
   }, [count])

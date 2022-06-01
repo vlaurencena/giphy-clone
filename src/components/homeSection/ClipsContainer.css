@@ -1,0 +1,15 @@
+.ClipsContainer {
+  display: flex;
+  min-height: 471px;
+  gap: 15px;
+}
+
+.ClipsContainer__main {
+  flex: 8;
+}
+
+.ClipsContainer__secondary {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}

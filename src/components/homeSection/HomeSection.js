@@ -1,13 +1,24 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "wouter"
 //components
 import Slider from "./Slider"
+import ClipsContainer from "./ClipsContainer"
 //css
 import "./HomeSection.css"
 //icons
 import ChevronRightIcon from "@mui/icons-material/ChevronRight"
 
 const HomeSection = ({ content, icon, link_text, link_url, title }) => {
+    const [showSlider, setShowSlider] = useState(false)
+    const [showClips, setShowClips] = useState(false)
+
+    useEffect(() => {
+        if (title === "Trending" || title === "Artists") {
+            setShowSlider(true)
+        }
+        title === "Clips" && setShowClips(true)
+    }, [title])
+
     return (
         <section className="HomeSection">
             <div className="HomeSection__heading">
@@ -21,9 +32,12 @@ const HomeSection = ({ content, icon, link_text, link_url, title }) => {
                 </Link>}
             </div>
             <div>
-                {content && <Slider
+                {showSlider && content.length > 0 && <Slider
                     content={content}
                     type={title}
+                />}
+                {showClips && content.length > 0 && <ClipsContainer
+                    content={content}
                 />}
             </div>
         </section>
