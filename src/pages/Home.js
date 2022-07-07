@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 //components
-import HomeSection from "../components/homeSection/HomeSection"
+import HomeSection from "../components/home_section/HomeSection"
 //services
 import trendingEndpoint from "../services/trendingEndpoint"
 import artistsEndpoint from "../services/artistsEndpoint"
@@ -13,14 +13,22 @@ const Home = () => {
   const [trending, setTrending] = useState([])
   const [artists, setArtists] = useState([])
   const [clips, setClips] = useState([])
+  const [stories, setStories] = useState([])
 
   useEffect(() => {
     trendingEndpoint({ limit: TRENDING_LIMIT }).then(result => {
       setTrending(result)
       setClips(HARDCODED_CLIPS)
+      setStories(randomize(result))
     })
     setArtists(artistsEndpoint())
   }, [])
+
+  const randomize = (data) => {
+    return data.sort(() => {
+      return Math.random() - 0.5
+    })
+  }
 
   return (
     <div className="Home width-1040">
@@ -49,6 +57,7 @@ const Home = () => {
         title={"Clips"}
       />
       <HomeSection
+        content={stories}
         icon={"stories"}
         title={"Stories"}
       />

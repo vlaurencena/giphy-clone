@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react"
 import { Link } from "wouter"
 import "./SingleGifHover.css"
 //icons
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import LinkIcon from '@mui/icons-material/Link';
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import LinkIcon from "@mui/icons-material/Link";
 const SingleGifHover = ({ username, avatar_url, handleCopyToClipboard }) => {
-    console.log(avatar_url);
     return (
         <div className="SingleGifHover">
             <div className="SingleGifHover__buttons">

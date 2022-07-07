@@ -5,8 +5,8 @@ import SingleArtist from "./SingleArtist"
 //css
 import "./Slider.css"
 //icons
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const Slider = ({ content, limit, type }) => {
 

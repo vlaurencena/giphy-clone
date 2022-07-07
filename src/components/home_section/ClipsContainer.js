@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react"
 //css
 import "./ClipsContainer.css"
-import SingleClip from "./SingleClip";
+//components
+import SingleClip from "./SingleClip"
 const ClipsContainer = ({ content }) => {
-    console.log(content);
     return (
-        <div className="ClipsContainer">
-            <div className="ClipsContainer__main">
+        <div className="clips-container">
+            <div className="first-column">
                 <SingleClip clip={content[0]} />
             </div>
-            <div className="ClipsContainer__secondary">
+            <div className="second-column">
                 <SingleClip clip={content[1]} />
                 <SingleClip clip={content[2]} />
             </div>

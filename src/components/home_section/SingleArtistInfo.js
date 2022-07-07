@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react"
 import { Link } from "wouter";
 //icons
-import VerifiedIcon from '@mui/icons-material/Verified'
+import VerifiedIcon from "@mui/icons-material/Verified"
 //css
 import "./SingleArtistInfo.css"
 

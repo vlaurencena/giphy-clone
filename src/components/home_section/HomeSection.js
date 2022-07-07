@@ -7,16 +7,19 @@ import ClipsContainer from "./ClipsContainer"
 import "./HomeSection.css"
 //icons
 import ChevronRightIcon from "@mui/icons-material/ChevronRight"
+import StoriesContainer from "./StoriesContainer"
 
 const HomeSection = ({ content, icon, link_text, link_url, title }) => {
     const [showSlider, setShowSlider] = useState(false)
     const [showClips, setShowClips] = useState(false)
+    const [showStories, setShowStories] = useState(false)
 
     useEffect(() => {
         if (title === "Trending" || title === "Artists") {
             setShowSlider(true)
         }
         title === "Clips" && setShowClips(true)
+        title === "Stories" && setShowStories(true)
     }, [title])
 
     return (
@@ -37,6 +40,9 @@ const HomeSection = ({ content, icon, link_text, link_url, title }) => {
                     type={title}
                 />}
                 {showClips && content.length > 0 && <ClipsContainer
+                    content={content}
+                />}
+                {showStories && content.length > 0 && <StoriesContainer
                     content={content}
                 />}
             </div>

@@ -1,0 +1,21 @@
+.stories-container {
+  min-width: 100%;
+}
+.stories-container > div {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.landscape-left-row {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+.landscape-right-row {
+  grid-template-columns: 1fr 1fr 2fr;
+}
+.landscape-middle-row {
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.no-landscape-row {
+  grid-template-columns: repeat(4, 1fr);
+}
+

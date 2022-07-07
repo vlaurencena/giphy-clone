@@ -1,0 +1,45 @@
+.single-clip {
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.clips-container > .second-column .single-clip {
+  max-height: 50%;
+}
+
+.single-clip > .video-container {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.single-clip > .video-container video {
+  min-width: 100%;
+}
+
+.single-clip > .info {
+  padding: 10px 0;
+  width: fit-content;
+}
+
+.single-clip .SingleArtist__info {
+  position: inherit;
+}
+
+.single-clip > .video-container > .buttons {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  gap: 15px;
+  right: 10px;
+  top: 10px;
+}
+
+.single-clip > .buttons svg {
+  height: 25px;
+  width: 25px;
+}

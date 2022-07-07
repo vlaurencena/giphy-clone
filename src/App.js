@@ -5,7 +5,7 @@ import Search from "./pages/Search"
 import Home from "./pages/Home"
 import TrendingGifs from "./pages/TrendingGifs"
 //components
-import SearchBar from "./components/searchBar/SearchBar"
+import SearchBar from "./components/search_bar/SearchBar"
 import Header from "./components/header/Header"
 
 const App = () => {
